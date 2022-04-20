@@ -6,10 +6,22 @@ Ma Compilalo è in primo luogo una libreria JS per l'interazione con il timeshee
 
 ## Installazione
 
-Per installare l'estensione è sufficiente scaricare il pacchetto dell'ultima versione dalla cartella `dist/` 
+L'installazione di estensioni esterne al Google Chrome Store, richiede grossi sforzi purtroppo. La richiesta di partecipazione allo store è già stata inviata in data 17 Aprile ma non è dato sapere nè se e nè quando verrà accettata.
 
-Versione più recente:
-https://github.com/diego-devita/compilalo/blob/main/dist/1.1/compilalo_1_1.crx
+https://developer.chrome.com/docs/extensions/mv2/external_extensions/
+
+Ma intanto nell'attesa...
+
+Per installare l'estensione:
+
+1. Scaricare il pacchetto dell'ultima versione dalla cartella `dist/` nella sua forma .zip - [versione più recente][latestversion_zip]
+2. Estrarre l'archivio in una cartella utente di cui conservare il percorso.
+3. Aprire il browser Chrome e cliccare sul menù > Altri Strumenti > Estensioni
+4. Sulla pagina di gestione delle estensioni, abilitare la Modalità sviluppatore
+5. Premere il nuovo tasto `Carica estensione non pacchettizzata` apparso in alto a sinistra
+6. Riportare il percorso in cui è stato estratto l'archivio
+
+La nuova estensione dovrebbe comparire ora tra quelle disponibili e sarà possibile anche "pinnarla" sulla barra visibile in modo da averla facilmente a disposizione.
 
 ## Utilizzo
 
@@ -38,3 +50,5 @@ Dopo il suo attivamento, Compilalo avrà iniettato nella pagina tutta la logica 
 Ogni commessa rendicontabile avrà un nuovo bottone con l'etichetta `AUTO` e affianco un ulteriore box che indichi quale criterio verrà applicato alla sua pressione. Esistono due criteri: `Quota`, `Fit`. Questi criteri sono selezionabili dal pannello di stato arancione in alto a sinistra. Quando si indica la quota, alla pressione del tasto AUTO, la riga sarà compilata con intervalli di tempo pari alla quota sul totale lavorato. La quota è un numero tra 0.01 e 1.00 (percentuale). Quando invece si seleziona il criterio Fit, la riga viene compilata con le differenze che servono a colmare il tempo lavorato rispetto ad eventuali altre commesse già rendicontate lo stesso giorno.
 
 Ogni volta che viene lanciata una compilazione automatica, alla fine viene aggiornato lo stato delle decorazioni rispetto alle ultime informazioni, ergo etichette % e stato di assolvimento del tempo lavorate rimangono consistenti. Quando però il tempo rendicontato viene inserito manualmente dall'utente, lo stato delle decorazioni sarà necessario aggiornarlo dal link `Aggiorna`.
+
+[latestversion_zip]: https://github.com/diego-devita/compilalo/blob/main/dist/1.1/compilalo_1_1.zip
