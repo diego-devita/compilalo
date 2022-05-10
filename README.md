@@ -43,7 +43,7 @@ Una routine js verrà eseguita in un contesto separato ma con il potere di acces
 Nulla sarà permanente finchè non verrà fatto <b>SALVA</b> o <b>INVIA</b> dall'utente.
 </pre>
 
-Dopo il suo attivamento, Compilalo avrà iniettato nella pagina tutta la logica necessaria alle sue leve per funzionare.
+Dopo averlo attivato, Compilalo avrà iniettato nella pagina tutta la logica necessaria alle sue leve per funzionare.
 
 ## Leve d'azione
 
